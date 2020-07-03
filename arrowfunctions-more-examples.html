@@ -10,8 +10,15 @@
         const race = '100m Dash';
         const winners = ['Hunter Gath', 'Singa song', 'Kumar Bros'];
         
+        const win = winners.map((winner, i) => ({        //implicit return with object literal
+            name: winner,
+            race: race,
+            place : i + 1
+        }));
+        const ages = [50,12,100,61,65,74,52,69,85,45,23,55,65,75,77,88]
         
-
+        const old = ages.filter(age => age >= 50);
+        console.log(old);
     </script>
 </body>
 </html>
