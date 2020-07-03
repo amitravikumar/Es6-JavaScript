@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const names = ['amit', 'ravi', 'kumar'];               //Normal functions
+
+        const fullNames = names.map(function(name){
+            return `${names} Kumar`;
+        });
+
+        console.log(fullNames);
+
+        const fullNames2 = names.map((name) => {              //Arrow functions
+            return `${name} kumar`;
+        });
+        console.log(fullNames2);
+
+        const sayMyName = (name) => {alert(`Hello ${name}!`)};
+    </script>
+</body>
+</html>

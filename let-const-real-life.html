@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//        (function(){                 //This is an example of an IIFE Function
+//            var name = "amit";       //This is an example of an IIFE Function
+//            console.log(name);       //This is an example of an IIFE Function
+//        })();
+
+//    {                                  //Alternate method for the IIFE function
+//        const name = 'amit';           //Alternate method for the IIFE function
+//        console.log(name);             //Alternate method for the IIFE function
+//    }
+
+    for(let i=0; i<10; i++){
+    console.log(i);
+    setTimeout(function(){
+        console.log(`Number is ` + i);
+    },1000);
+    }
+    </script>
+</body>
+</html>
